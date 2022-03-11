@@ -16,3 +16,36 @@ const rest = new Map();
   const time = 21;
  console.log (rest.get(time > rest.get('open')
   && time < rest.get('closed')));
+
+  //conveting objects to maps
+
+  const hoursMap = new Map(Object.entries(openingHours));
+
+  //iteration in maps
+
+
+const question = new Map( [
+['question', 'whats your best programming language'],
+[1, 'C'],
+[2, 'Java'],
+[3, 'JavaScript'],
+['correct', 3],
+[true, 'correct'],
+[false, 'Try again'],
+
+]);
+
+//using for loop
+
+for(const [key, value] of question) {
+
+    if( typeof key ==='number'){
+
+        console.log(
+            `Answer ${key}: ${value}`);
+        
+
+}
+}
+
+
